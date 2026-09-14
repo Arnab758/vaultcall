@@ -43,8 +43,6 @@ Open [http://localhost:3000](http://localhost:3000). Three seeded benchmark audi
 3. Test the **Airgap Scope Matrix**: In the audit modal, see the attacker's fake burner phone `+13055550144` flagged as `STRIPPED BY AIRGAP`.
 4. Hit the **Emergency Kill Switch** in the global header to see immediate system-wide dialing lockdown.
 
-For full video recording notes, see [DEMO_SCRIPT.md](./DEMO_SCRIPT.md).
-
 ## Offline checks
 
 All unit tests and type checks run offline with zero network calls:

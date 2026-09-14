@@ -216,7 +216,6 @@ vaultcall/
 │           │       ├── evidence-scorer.ts     # NLP verbatim claim cross-examination
 │           │       └── idempotency.ts         # Double-spend & race-condition lock
 │           └── tests/                         # Vitest unit and integration tests
-├── DEMO_SCRIPT.md                             # 3-minute video presentation guide
 └── README.md                                  # Repository documentation
 ```
 
