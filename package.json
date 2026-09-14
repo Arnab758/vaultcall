@@ -1,0 +1,12 @@
+{
+  "name": "call-e-vaultcall-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix apps/typescript/vaultcall run dev",
+    "build": "npm --prefix apps/typescript/vaultcall run build",
+    "test": "npm --prefix apps/typescript/vaultcall run test",
+    "typecheck": "npm --prefix apps/typescript/vaultcall run typecheck",
+    "install": "npm --prefix apps/typescript/vaultcall install"
+  }
+}
