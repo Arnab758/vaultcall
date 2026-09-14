@@ -183,6 +183,28 @@ npm test
 
 ---
 
+## 🌐 Cloud Deployment
+
+### 1. Deploying to Netlify
+VaultCall is pre-configured with `netlify.toml` and `@netlify/plugin-nextjs`:
+- Connect your repository on [Netlify](https://app.netlify.com).
+- Netlify will automatically detect `netlify.toml` (Base: `apps/typescript/vaultcall`, Command: `npm run build`, Publish: `.next`).
+- Environment variables: add `CALLE_API_KEY` in Netlify Site Settings.
+
+### 2. Deploying to Google Cloud Run
+VaultCall includes an optimized multi-stage `Dockerfile` with Next.js standalone output:
+```bash
+gcloud run deploy vaultcall \
+  --source . \
+  --platform managed \
+  --region us-central1 \
+  --allow-unauthenticated \
+  --port 8080
+```
+- Cloud Run automatically injects `$PORT` (8080) and starts the lightweight standalone Next.js server in under 300ms.
+
+---
+
 ## 📂 Project Structure
 
 ```
